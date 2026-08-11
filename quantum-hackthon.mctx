@@ -1,0 +1,34 @@
+#mctx v1.1 | updated:2026-08-11
+%%INDEX
+identity:!fixed:v1:0000000048
+projects:!durable:v2:0000000250
+checkpoint:!volatile:v2:0000000300
+%%END-INDEX
+%%@identity !fixed v:1
+user{alias,role}:
+  "mike","student/quantum-developer"
+repo{url,branch}:
+  "https://github.com/cyberhatc/quantum-hackthon","master"
+hackathon{name,theme,year}:
+  "IBM Qiskit Fall Fest","A Decade of Quantum on the Cloud","2026"
+%%END
+%%@projects !durable v:2
+projects[10]{id,title,status,file}:
+  p1,"Quantum Cloud Job Optimizer","tested","problem1_optimizer.py"
+  p2,"Hybrid Route Optimization","tested","problem2_routing.py"
+  p3,"Quantum Secure File Sharing","tested","problem3_security.py"
+  p4,"Green Cloud Scheduler","tested","problem4_green.py"
+  p5,"Quantum ML Anomaly Detection","tested","problem5_anomaly.py"
+  p6,"Disaster Response Allocation","tested","problem6_disaster.py"
+  p7,"Quantum Portfolio Optimizer","tested","problem7_portfolio.py"
+  p8,"Password Strength Analyzer","tested","problem8_password.py"
+  p9,"Quantum Circuit Marketplace","tested","problem9_marketplace.py"
+  p10,"Campus Resource Optimizer","tested","problem10_campus.py"
+%%END
+%%@checkpoint !volatile v:2
+task: "Testing all 10 hackathon problems"
+done: "All 10 problems written and tested. Fixed typos in P2, P8, P10"
+next: "Commit and push problems to GitHub one by one"
+files_touched: "All 10 problem files, quantum-hackthon.mctx"
+blockers: "none"
+%%END
