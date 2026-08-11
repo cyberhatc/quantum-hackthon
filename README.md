@@ -8,18 +8,18 @@ Solutions for all 10 hackathon problems using Qiskit and quantum computing.
 
 ## Problems Overview
 
-| # | Problem | File | Status |
-|---|---------|------|--------|
-| 1 | Quantum Cloud Job Optimizer | `problem1_optimizer.py` | ✅ |
-| 2 | Hybrid Route Optimization (QAOA) | `problem2_routing.py` | ✅ |
-| 3 | Quantum Secure File Sharing | `problem3_security.py` | ✅ |
-| 4 | Green Cloud Scheduler | `problem4_green.py` | ✅ |
-| 5 | Quantum ML Anomaly Detection | `problem5_anomaly.py` | ✅ |
-| 6 | Disaster Response Resource Allocation | `problem6_disaster.py` | ✅ |
-| 7 | Quantum Portfolio Optimizer | `problem7_portfolio.py` | ✅ |
-| 8 | Quantum Password Strength Analyzer | `problem8_password.py` | ✅ |
-| 9 | Quantum Circuit Marketplace | `problem9_marketplace.py` | ✅ |
-| 10 | Campus Cloud Resource Optimizer | `problem10_campus.py` | ✅ |
+| # | Problem | Folder | Status |
+|---|---------|--------|--------|
+| 1 | Quantum Cloud Job Optimizer | `problems/problem1/` | ✅ |
+| 2 | Hybrid Route Optimization (QAOA) | `problems/problem2/` | ✅ |
+| 3 | Quantum Secure File Sharing | `problems/problem3/` | ✅ |
+| 4 | Green Cloud Scheduler | `problems/problem4/` | ✅ |
+| 5 | Quantum ML Anomaly Detection | `problems/problem5/` | ✅ |
+| 6 | Disaster Response Resource Allocation | `problems/problem6/` | ✅ |
+| 7 | Quantum Portfolio Optimizer | `problems/problem7/` | ✅ |
+| 8 | Quantum Password Strength Analyzer | `problems/problem8/` | ✅ |
+| 9 | Quantum Circuit Marketplace | `problems/problem9/` | ✅ |
+| 10 | Campus Cloud Resource Optimizer | `problems/problem10/` | ✅ |
 
 ---
 
@@ -172,27 +172,37 @@ quantum-hackthon/
 ├── PROBLEMS.md                  # Detailed problem statements
 ├── requirements.txt             # Python dependencies
 ├── quantum-hackthon.mctx        # MCTX tracking file
-├── problem1_optimizer.py        # Problem 1 solution
-├── problem1_README.md           # Problem 1 statement
-├── problem2_routing.py          # Problem 2 solution
-├── problem2_README.md           # Problem 2 statement
-├── problem3_security.py         # Problem 3 solution
-├── problem3_README.md           # Problem 3 statement
-├── problem4_green.py            # Problem 4 solution
-├── problem4_README.md           # Problem 4 statement
-├── problem5_anomaly.py          # Problem 5 solution
-├── problem5_README.md           # Problem 5 statement
-├── problem6_disaster.py         # Problem 6 solution
-├── problem6_README.md           # Problem 6 statement
-├── problem7_portfolio.py        # Problem 7 solution
-├── problem7_README.md           # Problem 7 statement
-├── problem8_password.py         # Problem 8 solution
-├── problem8_README.md           # Problem 8 statement
-├── problem9_marketplace.py      # Problem 9 solution
-├── problem9_README.md           # Problem 9 statement
-├── problem10_campus.py          # Problem 10 solution
-├── problem10_README.md          # Problem 10 statement
-└── *.png                        # Generated visualizations
+└── problems/
+    ├── problem1/
+    │   ├── README.md            # Problem 1 statement
+    │   └── solution.py          # Problem 1 solution
+    ├── problem2/
+    │   ├── README.md            # Problem 2 statement
+    │   └── solution.py          # Problem 2 solution
+    ├── problem3/
+    │   ├── README.md            # Problem 3 statement
+    │   └── solution.py          # Problem 3 solution
+    ├── problem4/
+    │   ├── README.md            # Problem 4 statement
+    │   └── solution.py          # Problem 4 solution
+    ├── problem5/
+    │   ├── README.md            # Problem 5 statement
+    │   └── solution.py          # Problem 5 solution
+    ├── problem6/
+    │   ├── README.md            # Problem 6 statement
+    │   └── solution.py          # Problem 6 solution
+    ├── problem7/
+    │   ├── README.md            # Problem 7 statement
+    │   └── solution.py          # Problem 7 solution
+    ├── problem8/
+    │   ├── README.md            # Problem 8 statement
+    │   └── solution.py          # Problem 8 solution
+    ├── problem9/
+    │   ├── README.md            # Problem 9 statement
+    │   └── solution.py          # Problem 9 solution
+    └── problem10/
+        ├── README.md            # Problem 10 statement
+        └── solution.py          # Problem 10 solution
 ```
 
 ---
@@ -222,34 +232,34 @@ pip install -r requirements.txt
 
 ```bash
 # Problem 1: Quantum Cloud Job Optimizer
-python problem1_optimizer.py
+python problems/problem1/solution.py
 
 # Problem 2: Hybrid Route Optimization
-python problem2_routing.py
+python problems/problem2/solution.py
 
 # Problem 3: Quantum Secure File Sharing
-python problem3_security.py
+python problems/problem3/solution.py
 
 # Problem 4: Green Cloud Scheduler
-python problem4_green.py
+python problems/problem4/solution.py
 
 # Problem 5: Quantum ML Anomaly Detection
-python problem5_anomaly.py
+python problems/problem5/solution.py
 
 # Problem 6: Disaster Response Resource Allocation
-python problem6_disaster.py
+python problems/problem6/solution.py
 
 # Problem 7: Quantum Portfolio Optimizer
-python problem7_portfolio.py
+python problems/problem7/solution.py
 
 # Problem 8: Quantum Password Strength Analyzer
-python problem8_password.py
+python problems/problem8/solution.py
 
 # Problem 9: Quantum Circuit Marketplace
-python problem9_marketplace.py
+python problems/problem9/solution.py
 
 # Problem 10: Campus Cloud Resource Optimizer
-python problem10_campus.py
+python problems/problem10/solution.py
 ```
 
 ---
@@ -269,17 +279,7 @@ python problem10_campus.py
 
 ## GitHub Issues
 
-All problems have corresponding GitHub issues:
-- [Issue #1](https://github.com/cyberhatc/quantum-hackthon/issues/1) - Problem 1
-- [Issue #2](https://github.com/cyberhatc/quantum-hackthon/issues/2) - Problem 2
-- [Issue #3](https://github.com/cyberhatc/quantum-hackthon/issues/3) - Problem 3
-- [Issue #4](https://github.com/cyberhatc/quantum-hackthon/issues/4) - Problem 4
-- [Issue #5](https://github.com/cyberhatc/quantum-hackthon/issues/5) - Problem 5
-- [Issue #6](https://github.com/cyberhatc/quantum-hackthon/issues/6) - Problem 6
-- [Issue #7](https://github.com/cyberhatc/quantum-hackthon/issues/7) - Problem 7
-- [Issue #8](https://github.com/cyberhatc/quantum-hackthon/issues/8) - Problem 8
-- [Issue #9](https://github.com/cyberhatc/quantum-hackthon/issues/9) - Problem 9
-- [Issue #10](https://github.com/cyberhatc/quantum-hackthon/issues/10) - Problem 10
+- [Issue #11](https://github.com/cyberhatc/quantum-hackthon/issues/11) - Fix file organization (this fix)
 
 ---
 
