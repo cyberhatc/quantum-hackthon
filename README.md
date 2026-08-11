@@ -1,4 +1,4 @@
-# IBM Qiskit Fall Fest 2026 - Hackathon
+# Quantum Problems
 
 ## Theme: A Decade of Quantum on the Cloud
 
@@ -437,6 +437,6 @@ Each problem generates visualization plots saved as `results.png` in their respe
 
 ## License
 
-This project is part of IBM Qiskit Fall Fest 2026 Hackathon.
+This project is part of Quantum Problems.
 
 MIT License - see [LICENSE](LICENSE) for details.

@@ -10,7 +10,7 @@ user{alias,role}:
 repo{url,branch}:
   "https://github.com/cyberhatc/quantum-hackthon","master"
 hackathon{name,theme,year}:
-  "IBM Qiskit Fall Fest","A Decade of Quantum on the Cloud","2026"
+  "Quantum Problems","Quantum Computing Solutions","2026"
 %%END
 %%@projects !durable v:2
 projects[10]{id,title,status,file}:

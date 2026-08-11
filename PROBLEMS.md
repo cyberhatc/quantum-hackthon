@@ -1,4 +1,4 @@
-# IBM Qiskit Fall Fest 2026 - Hackathon Problems
+# Quantum Problems
 
 ## Theme: A Decade of Quantum on the Cloud
 
