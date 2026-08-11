@@ -2,165 +2,42 @@
 
 ## Theme: A Decade of Quantum on the Cloud
 
-Solutions for all 10 hackathon problems using Qiskit and quantum computing.
+[![Python](https://img.shields.io/badge/Python-3.14-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Qiskit](https://img.shields.io/badge/Qiskit-2.5.1-6929C4?style=for-the-badge&logo=ibm-qiskit&logoColor=white)](https://qiskit.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
+Solutions for all 10 hackathon problems using Qiskit and quantum computing. This repository demonstrates quantum computing applications across various domains including optimization, security, machine learning, and resource management.
+
+---
+
+## Table of Contents
+
+- [Problems Overview](#problems-overview)
+- [Project Structure](#project-structure)
+- [Problem Statements](#problem-statements)
+- [Tech Stack](#tech-stack)
+- [Setup & Installation](#setup--installation)
+- [Running the Solutions](#running-the-solutions)
+- [Visualizations](#visualizations)
+- [Author](#author)
+- [License](#license)
 
 ---
 
 ## Problems Overview
 
-| # | Problem | Folder | Status |
-|---|---------|--------|--------|
-| 1 | Quantum Cloud Job Optimizer | `problems/problem1/` | ✅ |
-| 2 | Hybrid Route Optimization (QAOA) | `problems/problem2/` | ✅ |
-| 3 | Quantum Secure File Sharing | `problems/problem3/` | ✅ |
-| 4 | Green Cloud Scheduler | `problems/problem4/` | ✅ |
-| 5 | Quantum ML Anomaly Detection | `problems/problem5/` | ✅ |
-| 6 | Disaster Response Resource Allocation | `problems/problem6/` | ✅ |
-| 7 | Quantum Portfolio Optimizer | `problems/problem7/` | ✅ |
-| 8 | Quantum Password Strength Analyzer | `problems/problem8/` | ✅ |
-| 9 | Quantum Circuit Marketplace | `problems/problem9/` | ✅ |
-| 10 | Campus Cloud Resource Optimizer | `problems/problem10/` | ✅ |
-
----
-
-## Problem Statements
-
-### Problem 1: Quantum Cloud Job Optimizer
-
-**Challenge:** Benchmark and optimize quantum jobs across multiple cloud backends.
-
-**Requirements:**
-- Compare execution times, queue depths, and fidelities across backends
-- Recommend optimal backend for given circuit types
-- Visualize benchmark results with comparative charts
-
-**Solution:** Uses Qiskit Aer to simulate multiple backends with different noise profiles, benchmarks circuits, and recommends the best backend based on performance metrics.
-
----
-
-### Problem 2: Hybrid Route Optimization (QAOA)
-
-**Challenge:** Solve Traveling Salesman Problem using QAOA quantum optimization.
-
-**Requirements:**
-- Implement QAOA-based route optimization for TSP
-- Create hybrid quantum-classical optimization loop
-- Handle multiple cities with distance matrices
-- Visualize optimal route on a map
-
-**Solution:** Implements a simplified QAOA approach using Qiskit, with classical pre-processing for distance calculations and quantum optimization for route selection.
-
----
-
-### Problem 3: Quantum Secure File Sharing
-
-**Challenge:** Implement quantum-secure file sharing using QRNG and QKD.
-
-**Requirements:**
-- Quantum Random Number Generator for truly random keys
-- Simulate QKD protocol for secure key exchange
-- XOR encryption with quantum-generated keys
-- Demonstrate quantum advantage in key randomness
-
-**Solution:** Uses Qiskit to generate quantum random numbers, simulates BB84-style QKD protocol, and implements XOR encryption with quantum-generated keys.
-
----
-
-### Problem 4: Green Cloud Scheduler
-
-**Challenge:** Optimize datacenter energy consumption using quantum optimization.
-
-**Requirements:**
-- Model workload scheduling with energy constraints
-- Optimize for renewable energy utilization
-- Minimize carbon footprint while meeting deadlines
-- Compare energy-optimized vs performance-optimized scheduling
-
-**Solution:** Implements a quantum-inspired optimization for workload scheduling, balancing energy consumption, carbon footprint, and execution deadlines.
-
----
-
-### Problem 5: Quantum ML Anomaly Detection
-
-**Challenge:** Detect cloud infrastructure anomalies using quantum machine learning.
-
-**Requirements:**
-- Implement quantum kernel for feature extraction
-- Detect anomalies in simulated cloud metrics
-- Compare quantum vs classical detection accuracy
-- Visualize detection results with highlighting
-
-**Solution:** Uses quantum feature maps and kernel methods to detect anomalies in cloud infrastructure metrics, demonstrating quantum advantage in pattern recognition.
-
----
-
-### Problem 6: Disaster Response Resource Allocation
-
-**Challenge:** Optimize resource allocation during disasters using quantum computing.
-
-**Requirements:**
-- Model disaster response with multiple resource types
-- Optimize allocation considering time, distance, and demand
-- Handle multiple facilities and affected areas
-- Visualize allocation plan with resource distribution
-
-**Solution:** Implements a multi-constraint optimization for disaster response, using quantum-inspired algorithms to find optimal resource allocation.
-
----
-
-### Problem 7: Quantum Portfolio Optimizer
-
-**Challenge:** Optimize cloud service allocation using portfolio theory and quantum optimization.
-
-**Requirements:**
-- Model cloud services with cost, benefit, and risk metrics
-- Optimize allocation under budget constraints
-- Calculate efficient frontier of risk vs return
-- Compare quantum vs classical optimization
-
-**Solution:** Applies portfolio optimization theory to cloud service allocation, using quantum-inspired optimization to find the optimal balance of cost, benefit, and risk.
-
----
-
-### Problem 8: Quantum Password Strength Analyzer
-
-**Challenge:** Analyze password strength using quantum random number generation.
-
-**Requirements:**
-- QRNG-based password generation
-- Entropy calculation and strength classification
-- Quantum vs classical password comparison
-- Visualize entropy distribution and strength categories
-
-**Solution:** Uses Qiskit to generate quantum random numbers for password generation, calculates entropy based on character set size, and classifies password strength.
-
----
-
-### Problem 9: Quantum Circuit Marketplace
-
-**Challenge:** Create a cloud platform for sharing, benchmarking, and comparing quantum circuits.
-
-**Requirements:**
-- Circuit library (Bell state, GHZ, QFT, Grover's)
-- Benchmark circuits for execution time and output distribution
-- Compare circuit performance metrics
-- Visualize circuit comparisons
-
-**Solution:** Implements a circuit marketplace with benchmarking capabilities, comparing circuits based on qubit count, gate count, execution time, and output entropy.
-
----
-
-### Problem 10: Campus Cloud Resource Optimizer
-
-**Challenge:** Optimize campus lab booking and GPU allocation using quantum optimization.
-
-**Requirements:**
-- Model campus resources (labs, time slots, capacities)
-- Handle multiple booking requests with priorities
-- Optimize utilization across all resources
-- Compare quantum vs classical allocation strategies
-
-**Solution:** Implements a resource allocation system for campus computing, using quantum-inspired optimization to maximize resource utilization while respecting priorities.
+| # | Problem | Folder | Difficulty | Status |
+|---|---------|--------|------------|--------|
+| 1 | Quantum Cloud Job Optimizer | `Quantum-Cloud-Job-Optimizer/` | Intermediate | ✅ Solved |
+| 2 | Hybrid Route Optimization (QAOA) | `Hybrid-Route-Optimization/` | Intermediate | ✅ Solved |
+| 3 | Quantum Secure File Sharing | `Quantum-Secure-File-Sharing/` | Intermediate | ✅ Solved |
+| 4 | Green Cloud Scheduler | `Green-Cloud-Scheduler/` | Intermediate | ✅ Solved |
+| 5 | Quantum ML Anomaly Detection | `Quantum-ML-Anomaly-Detection/` | Intermediate | ✅ Solved |
+| 6 | Disaster Response Resource Allocation | `Disaster-Response-Resource-Allocation/` | Intermediate | ✅ Solved |
+| 7 | Quantum Portfolio Optimizer | `Quantum-Portfolio-Optimizer/` | Intermediate | ✅ Solved |
+| 8 | Quantum Password Strength Analyzer | `Quantum-Password-Strength-Analyzer/` | Intermediate | ✅ Solved |
+| 9 | Quantum Circuit Marketplace | `Quantum-Circuit-Marketplace/` | Intermediate | ✅ Solved |
+| 10 | Campus Cloud Resource Optimizer | `Campus-Cloud-Resource-Optimizer/` | Intermediate | ✅ Solved |
 
 ---
 
@@ -168,99 +45,260 @@ Solutions for all 10 hackathon problems using Qiskit and quantum computing.
 
 ```
 quantum-hackthon/
-├── README.md                    # This file
-├── PROBLEMS.md                  # Detailed problem statements
-├── requirements.txt             # Python dependencies
-├── quantum-hackthon.mctx        # MCTX tracking file
-└── problems/
-    ├── problem1/
-    │   ├── README.md            # Problem 1 statement
-    │   └── solution.py          # Problem 1 solution
-    ├── problem2/
-    │   ├── README.md            # Problem 2 statement
-    │   └── solution.py          # Problem 2 solution
-    ├── problem3/
-    │   ├── README.md            # Problem 3 statement
-    │   └── solution.py          # Problem 3 solution
-    ├── problem4/
-    │   ├── README.md            # Problem 4 statement
-    │   └── solution.py          # Problem 4 solution
-    ├── problem5/
-    │   ├── README.md            # Problem 5 statement
-    │   └── solution.py          # Problem 5 solution
-    ├── problem6/
-    │   ├── README.md            # Problem 6 statement
-    │   └── solution.py          # Problem 6 solution
-    ├── problem7/
-    │   ├── README.md            # Problem 7 statement
-    │   └── solution.py          # Problem 7 solution
-    ├── problem8/
-    │   ├── README.md            # Problem 8 statement
-    │   └── solution.py          # Problem 8 solution
-    ├── problem9/
-    │   ├── README.md            # Problem 9 statement
-    │   └── solution.py          # Problem 9 solution
-    └── problem10/
-        ├── README.md            # Problem 10 statement
-        └── solution.py          # Problem 10 solution
+│
+├── README.md                          # Main project documentation
+├── PROBLEMS.md                        # Detailed problem statements
+├── requirements.txt                   # Python dependencies
+├── quantum-hackthon.mctx              # MCTX tracking file
+│
+├── Quantum-Cloud-Job-Optimizer/
+│   ├── problem_statement.md           # Problem statement
+│   ├── solution.py                    # Solution code
+│   └── results.png                    # Visualization output
+│
+├── Hybrid-Route-Optimization/
+│   ├── problem_statement.md
+│   ├── solution.py
+│   └── results.png
+│
+├── Quantum-Secure-File-Sharing/
+│   ├── problem_statement.md
+│   └── solution.py
+│
+├── Green-Cloud-Scheduler/
+│   ├── problem_statement.md
+│   └── solution.py
+│
+├── Quantum-ML-Anomaly-Detection/
+│   ├── problem_statement.md
+│   └── solution.py
+│
+├── Disaster-Response-Resource-Allocation/
+│   ├── problem_statement.md
+│   └── solution.py
+│
+├── Quantum-Portfolio-Optimizer/
+│   ├── problem_statement.md
+│   ├── solution.py
+│   └── results.png
+│
+├── Quantum-Password-Strength-Analyzer/
+│   ├── problem_statement.md
+│   ├── solution.py
+│   └── results.png
+│
+├── Quantum-Circuit-Marketplace/
+│   ├── problem_statement.md
+│   ├── solution.py
+│   └── results.png
+│
+└── Campus-Cloud-Resource-Optimizer/
+    ├── problem_statement.md
+    ├── solution.py
+    └── results.png
 ```
 
 ---
 
-## Running the Solutions
+## Problem Statements
 
-### Prerequisites
+### 1. Quantum Cloud Job Optimizer
 
-- Python 3.14
-- Qiskit 2.5.1
-- Qiskit IBM Runtime 0.49.0
-- Qiskit Aer 0.17.2
-- NumPy
-- Matplotlib
+**Challenge:** Benchmark and optimize quantum jobs across multiple cloud backends.
 
-### Setup
+**Description:**
+Quantum cloud computing providers offer multiple backends with varying capabilities. Developers need to select the optimal backend for their quantum circuits based on factors like execution time, queue depth, and output fidelity.
 
-```bash
-# Activate virtual environment
-source /home/mike/Desktop/practic/env/bin/activate
+**Key Features:**
+- Simulates multiple quantum backends with different noise profiles
+- Benchmarks circuits for execution time, queue depth, and fidelity
+- Recommends optimal backend based on performance metrics
+- Generates comparative visualization charts
 
-# Install dependencies (if needed)
-pip install -r requirements.txt
-```
+**Quantum Concepts Used:**
+- Backend simulation
+- Noise modeling
+- Performance benchmarking
 
-### Running Individual Problems
+---
 
-```bash
-# Problem 1: Quantum Cloud Job Optimizer
-python problems/problem1/solution.py
+### 2. Hybrid Route Optimization (QAOA)
 
-# Problem 2: Hybrid Route Optimization
-python problems/problem2/solution.py
+**Challenge:** Solve Traveling Salesman Problem using QAOA quantum optimization.
 
-# Problem 3: Quantum Secure File Sharing
-python problems/problem3/solution.py
+**Description:**
+The Traveling Salesman Problem (TSP) is a classic optimization challenge. This solution implements a hybrid quantum-classical approach using QAOA (Quantum Approximate Optimization Algorithm) for route optimization.
 
-# Problem 4: Green Cloud Scheduler
-python problems/problem4/solution.py
+**Key Features:**
+- QAOA-based route optimization
+- Hybrid quantum-classical optimization loop
+- Multiple cities with distance matrices
+- Route visualization on 2D plane
 
-# Problem 5: Quantum ML Anomaly Detection
-python problems/problem5/solution.py
+**Quantum Concepts Used:**
+- QAOA algorithm
+- Parameterized quantum circuits
+- Classical-quantum optimization loop
 
-# Problem 6: Disaster Response Resource Allocation
-python problems/problem6/solution.py
+---
 
-# Problem 7: Quantum Portfolio Optimizer
-python problems/problem7/solution.py
+### 3. Quantum Secure File Sharing
 
-# Problem 8: Quantum Password Strength Analyzer
-python problems/problem8/solution.py
+**Challenge:** Implement quantum-secure file sharing using QRNG and QKD.
 
-# Problem 9: Quantum Circuit Marketplace
-python problems/problem9/solution.py
+**Description:**
+Classical encryption methods face threats from quantum computers. This solution uses Quantum Random Number Generation (QRNG) and Quantum Key Distribution (QKD) for information-theoretically secure file sharing.
 
-# Problem 10: Campus Cloud Resource Optimizer
-python problems/problem10/solution.py
-```
+**Key Features:**
+- QRNG for truly random key generation
+- BB84-style QKD protocol simulation
+- XOR encryption with quantum-generated keys
+- Eavesdropping detection demonstration
+
+**Quantum Concepts Used:**
+- Quantum random number generation
+- Quantum key distribution
+- BB84 protocol
+
+---
+
+### 4. Green Cloud Scheduler
+
+**Challenge:** Optimize datacenter energy consumption using quantum optimization.
+
+**Description:**
+Datacenters consume massive amounts of energy. This solution optimizes workload scheduling to align with renewable energy availability, reducing carbon footprint while maintaining performance SLAs.
+
+**Key Features:**
+- Workload scheduling with energy constraints
+- Renewable energy utilization optimization
+- Carbon footprint minimization
+- Energy vs performance tradeoff analysis
+
+**Quantum Concepts Used:**
+- Quantum-inspired optimization
+- Multi-constraint optimization
+- Resource scheduling
+
+---
+
+### 5. Quantum ML Anomaly Detection
+
+**Challenge:** Detect cloud infrastructure anomalies using quantum machine learning.
+
+**Description:**
+Cloud infrastructure generates massive log data. This solution uses quantum machine learning for anomaly detection, leveraging quantum kernels for feature extraction and pattern recognition.
+
+**Key Features:**
+- Quantum kernel for feature extraction
+- Anomaly detection in cloud metrics
+- Quantum vs classical comparison
+- Detection accuracy visualization
+
+**Quantum Concepts Used:**
+- Quantum feature maps
+- Quantum kernel methods
+- Quantum machine learning
+
+---
+
+### 6. Disaster Response Resource Allocation
+
+**Challenge:** Optimize resource allocation during disasters using quantum computing.
+
+**Description:**
+During natural disasters, efficient allocation of limited resources across affected areas is critical. This solution implements multi-constraint optimization for disaster response resource allocation.
+
+**Key Features:**
+- Multi-resource type optimization
+- Time, distance, and demand constraints
+- Multiple facilities and affected areas
+- Resource distribution visualization
+
+**Quantum Concepts Used:**
+- Multi-constraint optimization
+- Quantum-inspired algorithms
+- Facility location optimization
+
+---
+
+### 7. Quantum Portfolio Optimizer
+
+**Challenge:** Optimize cloud service allocation using portfolio theory and quantum optimization.
+
+**Description:**
+Cloud service providers offer multiple services with varying costs, benefits, and risks. This solution applies portfolio optimization theory to find the optimal balance of cost, benefit, and risk.
+
+**Key Features:**
+- Cost, benefit, and risk modeling
+- Budget constraint optimization
+- Efficient frontier calculation
+- Quantum vs classical comparison
+
+**Quantum Concepts Used:**
+- Portfolio optimization
+- Quantum-inspired optimization
+- Risk-return analysis
+
+---
+
+### 8. Quantum Password Strength Analyzer
+
+**Challenge:** Analyze password strength using quantum random number generation.
+
+**Description:**
+Password security relies on randomness. This solution uses QRNG for truly random password generation and provides entropy-based strength classification.
+
+**Key Features:**
+- QRNG-based password generation
+- Entropy calculation and strength classification
+- Quantum vs classical comparison
+- Strength distribution visualization
+
+**Quantum Concepts Used:**
+- Quantum random number generation
+- Entropy calculation
+- Password strength analysis
+
+---
+
+### 9. Quantum Circuit Marketplace
+
+**Challenge:** Create a cloud platform for sharing, benchmarking, and comparing quantum circuits.
+
+**Description:**
+As quantum computing grows, developers need to share and compare quantum circuits. This solution implements a circuit marketplace with benchmarking capabilities.
+
+**Key Features:**
+- Circuit library (Bell state, GHZ, QFT, Grover's)
+- Performance benchmarking
+- Circuit comparison metrics
+- Marketplace visualization
+
+**Quantum Concepts Used:**
+- Circuit analysis
+- Performance benchmarking
+- Quantum circuit comparison
+
+---
+
+### 10. Campus Cloud Resource Optimizer
+
+**Challenge:** Optimize campus lab booking and GPU allocation using quantum optimization.
+
+**Description:**
+Universities have limited computing resources. This solution implements a resource allocation system using quantum-inspired optimization to maximize utilization while respecting priorities.
+
+**Key Features:**
+- Lab booking system
+- Priority-based allocation
+- Resource utilization optimization
+- Quantum vs classical comparison
+
+**Quantum Concepts Used:**
+- Resource optimization
+- Priority-based scheduling
+- Quantum-inspired algorithms
 
 ---
 
@@ -268,18 +306,115 @@ python problems/problem10/solution.py
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
-| Python | 3.14 | Core language |
+| Python | 3.14 | Core programming language |
 | Qiskit | 2.5.1 | Quantum computing framework |
 | Qiskit IBM Runtime | 0.49.0 | IBM Quantum Platform integration |
-| Qiskit Aer | 0.17.2 | Quantum simulation |
-| NumPy | - | Numerical computing |
-| Matplotlib | - | Data visualization |
+| Qiskit Aer | 0.17.2 | Quantum circuit simulation |
+| NumPy | Latest | Numerical computing |
+| Matplotlib | Latest | Data visualization |
+
+---
+
+## Setup & Installation
+
+### Prerequisites
+
+- Python 3.14 or higher
+- pip package manager
+- Git
+
+### Installation Steps
+
+```bash
+# Clone the repository
+git clone https://github.com/cyberhatc/quantum-hackthon.git
+cd quantum-hackthon
+
+# Activate virtual environment
+source /home/mike/Desktop/practic/env/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Dependencies
+
+```
+qiskit==2.5.1
+qiskit-ibm-runtime==0.49.0
+qiskit-aer==0.17.2
+numpy
+matplotlib
+```
+
+---
+
+## Running the Solutions
+
+### Running Individual Problems
+
+```bash
+# Problem 1: Quantum Cloud Job Optimizer
+python Quantum-Cloud-Job-Optimizer/solution.py
+
+# Problem 2: Hybrid Route Optimization
+python Hybrid-Route-Optimization/solution.py
+
+# Problem 3: Quantum Secure File Sharing
+python Quantum-Secure-File-Sharing/solution.py
+
+# Problem 4: Green Cloud Scheduler
+python Green-Cloud-Scheduler/solution.py
+
+# Problem 5: Quantum ML Anomaly Detection
+python Quantum-ML-Anomaly-Detection/solution.py
+
+# Problem 6: Disaster Response Resource Allocation
+python Disaster-Response-Resource-Allocation/solution.py
+
+# Problem 7: Quantum Portfolio Optimizer
+python Quantum-Portfolio-Optimizer/solution.py
+
+# Problem 8: Quantum Password Strength Analyzer
+python Quantum-Password-Strength-Analyzer/solution.py
+
+# Problem 9: Quantum Circuit Marketplace
+python Quantum-Circuit-Marketplace/solution.py
+
+# Problem 10: Campus Cloud Resource Optimizer
+python Campus-Cloud-Resource-Optimizer/solution.py
+```
+
+### Expected Output
+
+Each solution will:
+1. Print problem description and results to console
+2. Generate visualization plots (saved as `results.png`)
+3. Display performance metrics and comparisons
+
+---
+
+## Visualizations
+
+Each problem generates visualization plots saved as `results.png` in their respective folders:
+
+| Problem | Visualization |
+|---------|---------------|
+| 1 | Backend performance comparison charts |
+| 2 | Route optimization visualization |
+| 4 | Energy consumption timeline |
+| 5 | Anomaly detection results |
+| 6 | Resource allocation map |
+| 7 | Efficient frontier plot |
+| 8 | Password strength distribution |
+| 9 | Circuit comparison metrics |
+| 10 | Resource utilization charts |
 
 ---
 
 ## GitHub Issues
 
-- [Issue #11](https://github.com/cyberhatc/quantum-hackthon/issues/11) - Fix file organization (this fix)
+- [Issue #11](https://github.com/cyberhatc/quantum-hackthon/issues/11) - File organization fix (completed)
 
 ---
 
@@ -287,8 +422,21 @@ python problems/problem10/solution.py
 
 **mike** - student/quantum-developer
 
+- GitHub: [cyberhatc](https://github.com/cyberhatc)
+- Repository: [quantum-hackthon](https://github.com/cyberhatc/quantum-hackthon)
+
+---
+
+## Acknowledgments
+
+- IBM for organizing Qiskit Fall Fest 2026
+- Qiskit community for excellent documentation and support
+- Quantum computing researchers for advancing the field
+
 ---
 
 ## License
 
 This project is part of IBM Qiskit Fall Fest 2026 Hackathon.
+
+MIT License - see [LICENSE](LICENSE) for details.
