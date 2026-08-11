@@ -25,10 +25,10 @@ projects[10]{id,title,status,file}:
   p9,"Quantum Circuit Marketplace","tested","problem9_marketplace.py"
   p10,"Campus Resource Optimizer","tested","problem10_campus.py"
 %%END
-%%@checkpoint !volatile v:2
-task: "Testing all 10 hackathon problems"
-done: "All 10 problems written and tested. Fixed typos in P2, P8, P10"
-next: "Commit and push problems to GitHub one by one"
+%%@checkpoint !volatile v:3
+task: "Pushing all problems to GitHub and creating issues"
+done: "All 10 problems pushed to GitHub, 10 issues created"
+next: "Done - all hackathon problems complete"
 files_touched: "All 10 problem files, quantum-hackthon.mctx"
 blockers: "none"
 %%END
